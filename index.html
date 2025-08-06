@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wilderness Survivor</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        
+        <div id="ui-container">
+            <div id="stats">
+                <div class="stat-bar">
+                    <div class="stat-label">Health</div>
+                    <div class="bar-container">
+                        <div id="health-bar" class="bar health"></div>
+                    </div>
+                </div>
+                <div class="stat-bar">
+                    <div class="stat-label">Hunger</div>
+                    <div class="bar-container">
+                        <div id="hunger-bar" class="bar hunger"></div>
+                    </div>
+                </div>
+                <div class="stat-bar">
+                    <div class="stat-label">Thirst</div>
+                    <div class="bar-container">
+                        <div id="thirst-bar" class="bar thirst"></div>
+                    </div>
+                </div>
+                <div class="stat-bar">
+                    <div class="stat-label">Stamina</div>
+                    <div class="bar-container">
+                        <div id="stamina-bar" class="bar stamina"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="inventory" class="hidden">
+                <div class="inventory-header">Inventory</div>
+                <div id="inventory-grid"></div>
+                <button id="close-inventory">Close</button>
+            </div>
+            
+            <div id="crafting" class="hidden">
+                <div class="crafting-header">Crafting</div>
+                <div id="crafting-recipes"></div>
+                <button id="close-crafting">Close</button>
+            </div>
+            
+            <div id="message-log"></div>
+            
+            <div id="controls">
+                <div>WASD: Move</div>
+                <div>E: Interact</div>
+                <div>I: Inventory</div>
+                <div>C: Crafting</div>
+                <div>Space: Harvest/Attack</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/world.js"></script>
+    <script src="js/entities.js"></script>
+    <script src="js/crafting.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
